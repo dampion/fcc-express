@@ -5,7 +5,9 @@ var app = express();
 console.log('Hello World')
 
 app.get('/', (req, res) => {
-    res.send('Hello Express')
+    // res.send('Hello Express')
+    // The directory name of the current module.(__dirname)
+    res.sendFile(__dirname, '/views/index.html')
 })
 
 
